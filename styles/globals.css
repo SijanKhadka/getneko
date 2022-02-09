@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+
+}
+
+button {
+  width: 10rem;
+  border: 1px solid blue;
+  padding: .5em;
+  border-radius: .5em;
+  background-color: hsl(212, 100%, 48%);
+  color: azure;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  gap: .2em;
+  align-items: center;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(212, 100%, 55%);
+}
+
+span {
+  font-size: x-large;
+}
+
+span > img {
+  filter: invert(100);
+  transform: rotate(345deg);
+}
+
+.code {
+  position: fixed;
+  bottom: .1em;
+  right:.5em;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+footer {
+  position: fixed;
+  bottom: .1em;
+  left: .5em;
+}
