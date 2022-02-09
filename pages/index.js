@@ -19,11 +19,10 @@ const index = () => {
         tags: [],
         new: true,
       });
-    let lazycode = Math.floor(Math.random() * 100);
     const fetchApi = async (url) => {
       fetch(await url)
         .then((x) => x.json())
-        .then((y) => setCatData(y[lazycode].id));
+        .then((y) => setCatData(y[Math.floor(Math.random() * y.length)].id));
     };
     fetchApi(api_url);
     // setURL({url:'https://media3.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif?cid=ecf05e479vafl7hrnl8vutt31d5q94905d1upatbpj6a6lt2&rid=giphy.gif&ct=g', new:true})
@@ -52,11 +51,10 @@ const index = () => {
         <button
           onClick={() => {
             const fetchApi = async (url) => {
-              const num = Math.floor(Math.random() * 100);
               fetch(await url)
                 .then((x) => x.json())
                 .then((y) => {
-                  setCatData(y[num].id);
+                  setCatData(y[Math.floor(Math.random() * y.length)].id);
                 });
             };
             fetchApi(api_url);
